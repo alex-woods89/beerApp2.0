@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <h1>Beer App v2.0!</h1>
-
+     <beer-list :beers="beers"></beer-list>
+     <beer-detail :beer="beer"></beer-detail>
   </div>
 </template>
 
 <script>
 import {eventBus} from './main'
-
+import BeerDetail from './components/BeerDetail'
+import BeerList from './components/BeerList'
 export default {
    data(){
      return{
@@ -15,7 +17,8 @@ export default {
      selectedBeer: null}
    },
   components: {
-    
+    "beer-list": BeerList,
+    "beer-detail": BeerDetail
   },
   mounted(){
     fetch('https://api.punkapi.com/v2/beers')
