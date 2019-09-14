@@ -1,5 +1,8 @@
 <template>
+  <div>
   <li v-on:click="handleClick">{{beer.name}}</li>
+  
+  </div>
 </template>
 
 <script>

@@ -4,17 +4,25 @@
      <div>
          <p>ABV: {{beer.abv}}%</p>
          <img :src="beer.image_url"  height="300">
-         <p>{{beer.description}}</p>        
+         <p>{{beer.description}}</p>  
+         <button v-on:click="addFavourite">Mark as favourite</button>      
      </div>
     </article>
 </template>
 
 <script>
+import { eventBus } from '../main'
 
 export default {
   name: 'beer-detail',
-  props:['beer']
+  props:['beer'],
+  methods:{
+    addFavourite: function() {
+        eventBus.$emit("favourite-added", this.beer)
+    }
 }
+}
+
 </script>
 
 <style>
