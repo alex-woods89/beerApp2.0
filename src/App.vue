@@ -29,6 +29,10 @@ export default {
      isBeerAFavourite: function(beer){
        const idOfFavourites = (this.favourites.map(favourite => favourite.id))
        return idOfFavourites.includes(beer.id)
+     },
+     removeFavourite: function(beer) {
+       const index = this.favourites.indexOf(beer)
+       this.favourites.splice(index, 1)
      }
 
    },
@@ -43,7 +47,8 @@ export default {
     .then(beers => this.beers = beers)
 
     eventBus.$on("beer-selected", beer => (this.selectedBeer = beer));
-    eventBus.$on("favourite-added", beer => this.addFavourite(beer))
+    eventBus.$on("favourite-added", beer => this.addFavourite(beer));
+    eventBus.$on("favourite-removed", beer => this.removeFavourite(beer))
   }
 }
 </script>
