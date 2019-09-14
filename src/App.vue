@@ -2,7 +2,7 @@
   <div id="app">
     <h1>Beer App v2.0!</h1>
      <beer-list :beers="beers"></beer-list>
-     <beer-detail :beer="beer"></beer-detail>
+     <beer-detail :beer="beer-selected"></beer-detail>
   </div>
 </template>
 
