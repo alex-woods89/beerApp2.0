@@ -1,12 +1,15 @@
 <template>
     <div>
-        <ul>
+        <h3>All the beers!</h3>
+        
+            <li>
             <list-component 
             v-for="beer in beers"
             :beer="beer"
             :key="beer.id"
             ></list-component>
-        </ul>
+            </li>
+        
     </div> 
 </template>
 

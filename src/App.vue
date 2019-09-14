@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <h1>Beer App v2.0!</h1>
+    <favourites-list :favourites="favourites"></favourites-list>
      <beer-list :beers="beers"></beer-list>
      <beer-detail v-if="selectedBeer" :beer="selectedBeer"></beer-detail>
-     <favourites-list :favourites="favourites"></favourites-list>
+     
   </div>
 </template>
 
