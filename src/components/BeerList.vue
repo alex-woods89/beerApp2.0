@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <h3>All the beers!</h3>
         
             <li>
@@ -25,5 +25,9 @@ export default {
 </script>
 
 <style>
+.favlist { display: flex;
+  justify-content: flex-start;
+  height: 100%;
 
+ }
 </style>

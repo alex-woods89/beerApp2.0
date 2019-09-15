@@ -20,5 +20,9 @@ export default {
 </script>
 
 <style>
+ .list { display: flex;
+  justify-content: flex-end;
+  height: 100%;
 
+ }
 </style>

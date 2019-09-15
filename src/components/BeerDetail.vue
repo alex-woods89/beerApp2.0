@@ -5,6 +5,7 @@
          <p>ABV: {{beer.abv}}%</p>
          <img :src="beer.image_url"  height="300">
          <p>{{beer.description}}</p>  
+         <p>{{beer.brewers_tips}}</p>
          <button v-on:click="addFavourite">Mark as favourite</button>      
      </div>
     </article>
