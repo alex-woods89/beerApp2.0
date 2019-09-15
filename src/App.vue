@@ -60,7 +60,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: black;
+  background-color: rgba(149, 200, 245, 0.788)
 }
 </style>
