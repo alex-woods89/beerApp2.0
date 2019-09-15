@@ -61,6 +61,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
-  background-color: rgba(149, 200, 245, 0.788)
+  background-color: rgba(168, 208, 243, 0.788)
 }
 </style>

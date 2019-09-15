@@ -21,4 +21,12 @@ export default {
 
 <style>
 li{ list-style-type: none; }
+
+button{
+    background-color:gray;
+    border: none;
+    color:honeydew;
+    border-radius: 8px;
+    transition: all 0.5s
+}
 </style>
